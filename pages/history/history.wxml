@@ -1,0 +1,4 @@
+<view bindtap="showHello" class="container page-test">
+
+
+</view>

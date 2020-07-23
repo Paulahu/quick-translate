@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container page-index">
+  <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
+  <i-tab-bar current="{{ current }}" color="#ffff00" bindchange="handleChange" class="tab-bar">
+      <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+      <i-tab-bar-item key="group" icon="activity" current-icon="activity_fill" title="历史" ></i-tab-bar-item>
+  </i-tab-bar>
+</view>
+
