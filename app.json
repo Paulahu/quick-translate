@@ -1,14 +1,14 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/history/history",
     "pages/change/change"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#65b38a",
     "navigationBarTitleText": "哒哒翻译",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "backgroundColor": "#333"
   },
   "tabBar": {
@@ -28,9 +28,8 @@
         "text": "历史",
         "iconPath": "/src/history.png",
         "selectedIconPath": "/src/history-selected.png"
-
       }
     ]
-  }
-
+  },
+  "sitemapLocation": "sitemap28.json"
 }
