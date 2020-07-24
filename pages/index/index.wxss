@@ -31,15 +31,15 @@
 }
 .input-area .icon-close {
   position: absolute;
-  right: 12rpx;
-  top: 20rpx;
+  right: 40rpx;
+  top: 30rpx;
   z-index: 100;
   font-size: 40rpx;
   color: #888;
 }
 
 .input-area .text-area {
-  min-height: 80rpx;
+  min-height: 140rpx;
   padding: 40rpx;
   background-color: #fff;
 }
