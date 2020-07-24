@@ -9,17 +9,28 @@
     "navigationBarBackgroundColor": "#65b38a",
     "navigationBarTitleText": "Quick Translate",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "333"
+    "backgroundColor": "#333"
   },
+  "tabBar": {
+    "borderStyle": "black",
+    "position": "bottom",
+    "color": "#707070",
+    "selectedColor": "#65b38a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "翻译",
+        "iconPath": "/src/home.png",
+        "selectedIconPath": "/src/home-selected.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "/src/history.png",
+        "selectedIconPath": "/src/history-selected.png"
 
+      }
+    ]
+  }
 
-
-  "usingComponents": {
-    "i-button": "dist/button/index",
-    "i-tab-bar": "dist/tab-bar/index",
-    "i-tab-bar-item": "dist/tab-bar-item/index"
-  },
-
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
 }

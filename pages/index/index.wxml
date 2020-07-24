@@ -1,34 +1,28 @@
 <!--index.wxml-->
 <view class="container">
   <view class="change">
-    <navigator url="/pages/change/change.wxml" hover-class="navigator-hover">
-      <text>到{{curLan.chs}}</text>
-      <text class="iconfont icon-down"></text>
+    <navigator url="/pages/change/change" hover-class="navigator-hover">
+      <block>
+        <text>到{{curLang.chs}}</text>
+        <text class="iconfont icon-down"></text>
+      </block> 
     </navigator>
-  </view>
 
+  </view>
   <view class="input-area">
-    <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap="onTabClose"></text>
-    <view class="textarea-wrap"> 
-      <textarea placeholder="请输入要翻译的文本" placeholder-style="color:#8995a1" bindinput="onInput" bindconfirm="onConfirm" bindblur="onConfirm" value="{{query}}"></textarea>
+    <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
+    <view class="textarea-wrap">
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1'  bindinput='onInput' bindconfirm='onConfirm' bindblur='onConfirm'  value="{{query}}"></textarea>
+    </view>
+    
+    <view class="text-area">
+      <view class="text-title">译文</view>
+      <view class="text-result" wx:for="{{result}}" wx:key="index">
+        <text selectable="true">{{item.dst}}</text>
+      </view>
     </view>
   </view>
-
-  <view class="text-area">
-    <view class="text-title">译文</view>
-    <view class="text-result" wx:for="{{result}}" wx:key="index">
-    </view>
-  </view>
-
-
-
   <view class="copyright">
     <text>Copyright © Paula Hu 2020</text>
   </view>
-
-  <i-tab-bar current="{{ current }}" color="#65b38a" bindchange="handleChange" class="tab-bar">
-      <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
-      <i-tab-bar-item key="group" icon="activity" current-icon="activity_fill" title="历史" ></i-tab-bar-item>
-  </i-tab-bar>
 </view>
-

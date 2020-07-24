@@ -1,3 +1,5 @@
+// pages/history/history.js
+const app = getApp()
 
 Page({
 
@@ -5,15 +7,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name: 'paula',
+    history: []
   },
 
-  showHello: function () {
-    console.log('1')
-    wx.showToast({
-      title: '成功',
-      icon: 'sucess',
-      duration: 2000,
+
+  onShow: function () {
+    this.setData({ history: wx.getStorageSync('history')})
+  },
+
+  onTapItem: function(e) {
+    wx.reLaunch({
+      url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
     })
   },
+
 })

@@ -1,7 +1,7 @@
 /**app.wxss**/
-@import "./src/iconfont/iconfont.wxss"
+@import "./src/iconfont/iconfont.wxss";
 
-.container {
+ .container {
   height: 100vh;
   background-color: #f5fafe;
   display: flex;
@@ -16,7 +16,7 @@
   flex:1;
   display:flex;
   align-items:flex-end;
-  padding-bottom: 150rpx;
+  padding-bottom: 30rpx;
   font-size: 28rpx;
   color:#999;
 }
