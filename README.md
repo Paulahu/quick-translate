@@ -6,7 +6,7 @@
 这是一款简洁、易用的翻译软件（小程序）
 
 ## 扫码浏览
-<img src="/src/qrcode.jpg">
+<img src="/src/qrcode.jpg" width="100">
 
 ## 提问
 如果你遇到了问题或者有疑问，欢迎给我提[Issues](https://github.com/Paulahu/quick-translate/issues)
